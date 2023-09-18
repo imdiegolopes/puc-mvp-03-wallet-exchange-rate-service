@@ -13,7 +13,13 @@ class ExchangeRateHandler:
         pass
 
     def handle_get_exchange_rates():
-        response = requests.get(baseUrl + "/v6/latest/BRL")
+        currency = request.args.get('currency')
+
+        # Check if 'currency' parameter is provided
+        if currency is None or currency == "" or len(str(currency)) < 3:
+            currency = "BRL"
+
+        response = requests.get(baseUrl + "/v6/latest/" + currency)
 
         if response.status_code == 200:
             output = response.json()

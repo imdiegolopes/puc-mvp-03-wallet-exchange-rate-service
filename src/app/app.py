@@ -16,4 +16,4 @@ app.add_url_rule('/v1/convert', 'convert_rates',
                  ExchangeRateHandler.handle_post_convert_rates, methods=['POST'])
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True, port=5003)
+    app.run(debug=True, use_reloader=True, port=8081, host="0.0.0.0")

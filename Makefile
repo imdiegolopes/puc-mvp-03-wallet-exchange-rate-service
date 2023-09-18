@@ -8,7 +8,7 @@ build:
 
 # Run the Docker container
 run:
-		docker run -d -p 5003:5003 --name $(DOCKER_CONTAINER_NAME) $(DOCKER_IMAGE_NAME)
+	docker run -d -p 8081:8081 --name $(DOCKER_CONTAINER_NAME) $(DOCKER_IMAGE_NAME)
 
 # Stop and remove the Docker container
 stop:
