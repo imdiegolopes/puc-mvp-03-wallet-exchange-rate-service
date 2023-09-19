@@ -28,7 +28,7 @@ To run the Docker container, use the command:
 ```bash
 make run
 ```
-This command starts the container in detached mode, mapping port 5005 on your host machine to port 5003 in the container. The container will be named wallet_exchange_rate_service_container.
+This command starts the container in detached mode, mapping port 5005 on your host machine to port 8081 in the container. The container will be named wallet_exchange_rate_service_container.
 
 ### Stopping and Removing the Docker Container
 To stop and remove the Docker container, execute:

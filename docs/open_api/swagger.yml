@@ -13,7 +13,7 @@ externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
 servers:
-  - url: http://localhost:5003
+  - url: http://localhost:8081
 paths:
   /v1/exchange-rates:
     get:
