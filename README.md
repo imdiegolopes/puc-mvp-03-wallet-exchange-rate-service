@@ -40,6 +40,8 @@ This command stops and removes the container named wallet_exchange_rate_service_
 
 Make sure you have Docker installed on your system before running these commands.
 
+- make create_network: Create the Docker Network "my_network"
+
 ## API Documentation
 
 This project provides API documentation in the form of a Swagger YAML file. You can view the API documentation by following these steps:
